@@ -12,16 +12,16 @@ It calls on the unix exe liftOver, and liftOver takes .bed files and it's output
 Because usually this would need to be done over a number of files, the way the function is set up is that it takes in the path with all the .bed that needs to be 
 lifted over as a string. 
 Therefore here, for nextflow we cannot use the below. 
-'''
+```
 ch = Channel.fromPath('dir/xx.bed)
-'''
+```
 It has to be 
-'''
+```
 x = Channel.from('path') 
-'''  
+``` 
 and then in the input section 'x' has to be a env variable in this case.  
-'''
+```
 input: 
 env x
-'''
+```
 This is just an example, but the general rule is outlined. 
