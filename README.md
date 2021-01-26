@@ -7,3 +7,4 @@ However, the process is actually wrapped python code.  [This link](https://stack
 brief example of how python can be ran from nextflow but, this is a relatively simple case. When there are multiple inputs and outputs, it is 
 better to be albe to read the **bash variables**. 
 The script here demonstrates an example of how this can be done. 
+The .py script is for using UCSC's liftOver to lift mouse genome coordinates over to human genome coordinates.  
